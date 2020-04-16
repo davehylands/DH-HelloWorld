@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B8CF47C399797961A7E41C9 /* Pods_DH_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7011DB1ADDC76037FE9FCF /* Pods_DH_HelloWorld.framework */; };
-		F20B33372448D7F200D927AA /* FSLumberJackLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F20B33362448D7F200D927AA /* FSLumberJackLogger.m */; };
+		F20B3339244917A800D927AA /* FSWillowLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20B3338244917A800D927AA /* FSWillowLogger.swift */; };
 		F2BF88B0238F904800D7BD09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF88AF238F904800D7BD09 /* AppDelegate.swift */; };
 		F2BF88B2238F904800D7BD09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF88B1238F904800D7BD09 /* SceneDelegate.swift */; };
 		F2BF88B4238F904800D7BD09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF88B3238F904800D7BD09 /* ViewController.swift */; };
@@ -22,8 +22,7 @@
 		1BCACFD9EB123993E3382598 /* Pods-DH-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DH-HelloWorld.release.xcconfig"; path = "Target Support Files/Pods-DH-HelloWorld/Pods-DH-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		3E12B3A536C27C3E3EC2813C /* Pods-DH-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DH-HelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-DH-HelloWorld/Pods-DH-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		F20B33342448D7F200D927AA /* DH-HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DH-HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
-		F20B33352448D7F200D927AA /* FSLumberJackLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLumberJackLogger.h; sourceTree = "<group>"; };
-		F20B33362448D7F200D927AA /* FSLumberJackLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLumberJackLogger.m; sourceTree = "<group>"; };
+		F20B3338244917A800D927AA /* FSWillowLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSWillowLogger.swift; sourceTree = "<group>"; };
 		F2BF88AC238F904800D7BD09 /* DH-HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DH-HelloWorld.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BF88AF238F904800D7BD09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2BF88B1238F904800D7BD09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,8 +83,7 @@
 		F2BF88AE238F904800D7BD09 /* DH-HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				F20B33352448D7F200D927AA /* FSLumberJackLogger.h */,
-				F20B33362448D7F200D927AA /* FSLumberJackLogger.m */,
+				F20B3338244917A800D927AA /* FSWillowLogger.swift */,
 				F2BF88AF238F904800D7BD09 /* AppDelegate.swift */,
 				F2BF88B1238F904800D7BD09 /* SceneDelegate.swift */,
 				F2BF88B3238F904800D7BD09 /* ViewController.swift */,
@@ -232,9 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20B33372448D7F200D927AA /* FSLumberJackLogger.m in Sources */,
 				F2BF88B4238F904800D7BD09 /* ViewController.swift in Sources */,
 				F2BF88B0238F904800D7BD09 /* AppDelegate.swift in Sources */,
+				F20B3339244917A800D927AA /* FSWillowLogger.swift in Sources */,
 				F2BF88B2238F904800D7BD09 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

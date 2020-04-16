@@ -6,6 +6,6 @@ target 'DH-HelloWorld' do
   use_frameworks!
 
   # Pods for DH-HelloWorld
-  pod 'CocoaLumberjack/Swift'
+  pod 'Willow', '~> 5.0'
   pod 'FullStory', :http => 'https://ios-releases.fullstory.com/fullstory-1.1.5.tar.gz'
 end

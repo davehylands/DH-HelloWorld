@@ -1,16 +1,14 @@
 PODS:
-  - CocoaLumberjack/Core (3.6.1)
-  - CocoaLumberjack/Swift (3.6.1):
-    - CocoaLumberjack/Core
   - FullStory (1.1.5)
+  - Willow (5.2.1)
 
 DEPENDENCIES:
-  - CocoaLumberjack/Swift
   - "FullStory (from `{:http=>\"https://ios-releases.fullstory.com/fullstory-1.1.5.tar.gz\"}`)"
+  - Willow (~> 5.0)
 
 SPEC REPOS:
   trunk:
-    - CocoaLumberjack
+    - Willow
 
 EXTERNAL SOURCES:
   FullStory:
@@ -21,9 +19,9 @@ CHECKOUT OPTIONS:
     :http: https://ios-releases.fullstory.com/fullstory-1.1.5.tar.gz
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   FullStory: b354b2eded80400e690f79b347f06ce09c79ae6f
+  Willow: a6310f9aedcb6f4de8c35b94fd3416a660ae9280
 
-PODFILE CHECKSUM: 17f1bf83f08f20fcae4f5bfc84e1468386a5e3da
+PODFILE CHECKSUM: eb6c3bf49488f459cf794ff2b79403f0f23e90a0
 
 COCOAPODS: 1.9.1
