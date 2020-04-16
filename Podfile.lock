@@ -1,0 +1,29 @@
+PODS:
+  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack/Swift (3.6.1):
+    - CocoaLumberjack/Core
+  - FullStory (1.1.5)
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - "FullStory (from `{:http=>\"https://ios-releases.fullstory.com/fullstory-1.1.5.tar.gz\"}`)"
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  FullStory:
+    :http: https://ios-releases.fullstory.com/fullstory-1.1.5.tar.gz
+
+CHECKOUT OPTIONS:
+  FullStory:
+    :http: https://ios-releases.fullstory.com/fullstory-1.1.5.tar.gz
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  FullStory: b354b2eded80400e690f79b347f06ce09c79ae6f
+
+PODFILE CHECKSUM: 17f1bf83f08f20fcae4f5bfc84e1468386a5e3da
+
+COCOAPODS: 1.9.1

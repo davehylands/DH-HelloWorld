@@ -7,14 +7,47 @@
 //
 
 import UIKit
+import FullStory
+import FSLumberJackLogger
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, FSDelegate {
 
+    func fullstoryDidStartSession(_ sessionUrl: String) {
+        print("fullstoryDidStartSession: ", sessionUrl)
+        FS.log(with: FSLOG_INFO, message: "fullstoryDidStartSession")
+    }
 
+    func fullstoryDidStopSession() {
+        print("fullstoryDidStopSession")
+        FS.log(with: FSLOG_INFO, message: "fullstoryDidStopSession")
+    }
+
+    func fullstoryDidTerminateWithError(_ error: Error) {
+        print("fullstoryDidTerminateWithError")
+        FS.log(with: FSLOG_INFO, message: "fullstoryDidTerminateWithError")
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FS.delegate = self
+
+        FS.log(with: FSLOG_INFO, message: "didFinishLaunchingWithOptions")
+
+        let userId = "davehylands@fullstory.com"
+        let info = ["email": "davehylands@fullstory.com", "displayName": "Dave H"]
+        FS.identify(userId, userVars: info)
+
+        DDLog.add(DDOSLogger.sharedInstance)
+        DDLog.add(FSLumberJackLogger.sharedInstance)
+        
+        FS.log(with: FSLOG_ASSERT, message: "FS.log startup FSLOG_ASSERT")
+        FS.log(with: FSLOG_INFO, message: "FS.log startup FSLOG_INFO")
+        FS.log(with: FSLOG_WARNING, message: "FS.log startup FSLOG_WARNING")
+        FS.log(with: FSLOG_ERROR, message: "FS.log startup FSLOG_ERROR")
+        FS.log(with: FSLOG_DEBUG, message: "FS.log startup FSLOG_DEBUG")
+        
         return true
     }
 

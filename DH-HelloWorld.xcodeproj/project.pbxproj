@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B8CF47C399797961A7E41C9 /* Pods_DH_HelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7011DB1ADDC76037FE9FCF /* Pods_DH_HelloWorld.framework */; };
+		F20B33372448D7F200D927AA /* FSLumberJackLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F20B33362448D7F200D927AA /* FSLumberJackLogger.m */; };
 		F2BF88B0238F904800D7BD09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF88AF238F904800D7BD09 /* AppDelegate.swift */; };
 		F2BF88B2238F904800D7BD09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF88B1238F904800D7BD09 /* SceneDelegate.swift */; };
 		F2BF88B4238F904800D7BD09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BF88B3238F904800D7BD09 /* ViewController.swift */; };
@@ -16,6 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7011DB1ADDC76037FE9FCF /* Pods_DH_HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DH_HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCACFD9EB123993E3382598 /* Pods-DH-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DH-HelloWorld.release.xcconfig"; path = "Target Support Files/Pods-DH-HelloWorld/Pods-DH-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		3E12B3A536C27C3E3EC2813C /* Pods-DH-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DH-HelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-DH-HelloWorld/Pods-DH-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		F20B33342448D7F200D927AA /* DH-HelloWorld-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DH-HelloWorld-Bridging-Header.h"; sourceTree = "<group>"; };
+		F20B33352448D7F200D927AA /* FSLumberJackLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLumberJackLogger.h; sourceTree = "<group>"; };
+		F20B33362448D7F200D927AA /* FSLumberJackLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLumberJackLogger.m; sourceTree = "<group>"; };
 		F2BF88AC238F904800D7BD09 /* DH-HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DH-HelloWorld.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BF88AF238F904800D7BD09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2BF88B1238F904800D7BD09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8CF47C399797961A7E41C9 /* Pods_DH_HelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		727F27E4F8DFEBAE31A5CA5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E12B3A536C27C3E3EC2813C /* Pods-DH-HelloWorld.debug.xcconfig */,
+				1BCACFD9EB123993E3382598 /* Pods-DH-HelloWorld.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		93AE5F2386FBAA6E60847571 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C7011DB1ADDC76037FE9FCF /* Pods_DH_HelloWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2BF88A3238F904800D7BD09 = {
 			isa = PBXGroup;
 			children = (
 				F2BF88AE238F904800D7BD09 /* DH-HelloWorld */,
 				F2BF88AD238F904800D7BD09 /* Products */,
+				727F27E4F8DFEBAE31A5CA5F /* Pods */,
+				93AE5F2386FBAA6E60847571 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,8 @@
 		F2BF88AE238F904800D7BD09 /* DH-HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				F20B33352448D7F200D927AA /* FSLumberJackLogger.h */,
+				F20B33362448D7F200D927AA /* FSLumberJackLogger.m */,
 				F2BF88AF238F904800D7BD09 /* AppDelegate.swift */,
 				F2BF88B1238F904800D7BD09 /* SceneDelegate.swift */,
 				F2BF88B3238F904800D7BD09 /* ViewController.swift */,
@@ -63,6 +93,7 @@
 				F2BF88B8238F904A00D7BD09 /* Assets.xcassets */,
 				F2BF88BA238F904A00D7BD09 /* LaunchScreen.storyboard */,
 				F2BF88BD238F904A00D7BD09 /* Info.plist */,
+				F20B33342448D7F200D927AA /* DH-HelloWorld-Bridging-Header.h */,
 			);
 			path = "DH-HelloWorld";
 			sourceTree = "<group>";
@@ -74,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2BF88C0238F904A00D7BD09 /* Build configuration list for PBXNativeTarget "DH-HelloWorld" */;
 			buildPhases = (
+				9D1ABD7E0EF06426F6E35B20 /* [CP] Check Pods Manifest.lock */,
 				F2BF88A8238F904800D7BD09 /* Sources */,
 				F2BF88A9238F904800D7BD09 /* Frameworks */,
 				F2BF88AA238F904800D7BD09 /* Resources */,
+				78ADDD7CDD57AF15F6A02CF8 /* [CP] Embed Pods Frameworks */,
+				F20E09D12446B62C00D7680D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -99,6 +133,7 @@
 				TargetAttributes = {
 					F2BF88AB238F904800D7BD09 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -133,11 +168,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78ADDD7CDD57AF15F6A02CF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DH-HelloWorld/Pods-DH-HelloWorld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DH-HelloWorld/Pods-DH-HelloWorld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DH-HelloWorld/Pods-DH-HelloWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1ABD7E0EF06426F6E35B20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DH-HelloWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F20E09D12446B62C00D7680D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FullStory/tools/FullStoryCommandLine\" \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2BF88A8238F904800D7BD09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20B33372448D7F200D927AA /* FSLumberJackLogger.m in Sources */,
 				F2BF88B4238F904800D7BD09 /* ViewController.swift in Sources */,
 				F2BF88B0238F904800D7BD09 /* AppDelegate.swift in Sources */,
 				F2BF88B2238F904800D7BD09 /* SceneDelegate.swift in Sources */,
@@ -200,6 +295,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -260,6 +356,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -282,17 +379,21 @@
 		};
 		F2BF88C1238F904A00D7BD09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E12B3A536C27C3E3EC2813C /* Pods-DH-HelloWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y335ARQPRJ;
+				DEVELOPMENT_TEAM = 8Q8W5KSX6X;
 				INFOPLIST_FILE = "DH-HelloWorld/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fullstory..DH-HelloWorld";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fullstory.DH-HelloWorld";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DH-HelloWorld/DH-HelloWorld-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,17 +401,20 @@
 		};
 		F2BF88C2238F904A00D7BD09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCACFD9EB123993E3382598 /* Pods-DH-HelloWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y335ARQPRJ;
+				DEVELOPMENT_TEAM = 8Q8W5KSX6X;
 				INFOPLIST_FILE = "DH-HelloWorld/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fullstory..DH-HelloWorld";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fullstory.DH-HelloWorld";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DH-HelloWorld/DH-HelloWorld-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
