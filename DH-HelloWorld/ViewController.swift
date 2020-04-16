@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CocoaLumberjack
 
 class ViewController: UIViewController {
 
@@ -17,15 +16,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMessage(sender: UIButton) {
-        DDLogVerbose("DDLogVerbose log message")
-        DDLogDebug("DDLogDebug log message")
-        DDLogInfo("DDLogInfo log message")
-        DDLogWarn("DDLogWant log message")
-        DDLogError("DDLogError log message")
+        log.verbose("log.verbose message")
+        log.debug("log.debug log message")
+        log.info("log.info log message")
+        log.warning("log.warning log message")
+        log.error("log.error log message")
 
         let alertController = UIAlertController(title: "Welcome to My First App", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
 }
-
