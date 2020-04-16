@@ -6,4 +6,6 @@
 @interface FSLumberJackLogger : DDAbstractLogger <DDLogger>
 {
 }
+- (DDLoggerName)loggerName;
+- (void)logMessage:(DDLogMessage *)logMessage;
 @end

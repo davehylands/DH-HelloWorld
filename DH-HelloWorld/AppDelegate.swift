@@ -8,7 +8,7 @@
 
 import UIKit
 import FullStory
-import FSLumberJackLogger
+import Pods_DH_HelloWorld
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, FSDelegate {

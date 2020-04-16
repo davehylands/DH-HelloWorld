@@ -1,5 +1,7 @@
 #import "FSLumberJackLogger.h"
 
+@import FullStory;
+
 @implementation FSLumberJackLogger
 
 - (DDLoggerName)loggerName {
@@ -9,11 +11,11 @@
 - (void)logMessage:(DDLogMessage *)logMessage {
     NSString *logMsg = logMessage.message;
 
-    if (self->logFormatter)
-        logMsg = [self->logFormatter formatLogMessage:logMessage];
+    if (self->_logFormatter)
+        logMsg = [self->_logFormatter formatLogMessage:logMessage];
     if (logMsg) {
         FSEventLogLevel logLevel = FSLOG_DEBUG;
-        switch (logMsg->_flag) {
+        switch (logMessage->_flag) {
             case DDLogFlagError:
                 logLevel = FSLOG_ERROR;
                 break;
@@ -28,7 +30,7 @@
                 logLevel = FSLOG_INFO;
                 break;
         }
-        [FS logWithLevel:logLevel format:@"%@", logMsg->_message];
+        [FS logWithLevel:logLevel format:@"%@", logMsg];
     }
 }
 
